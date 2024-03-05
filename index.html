@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/35f5de594d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/user-_1_.ico" type="image/x-icon">
     <title>Login-Page</title>
+    
 </head>
 <body>
     <main>
@@ -20,17 +23,17 @@
                     <h1>Login <i class="fa-regular fa-user"></i> </h1>
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+                        <input id="usuario" type="text" name="usuario" placeholder="Usuário">
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
-                        <button class="btn-login">Login <i class="fa-solid fa-user-check"></i></button>
-                        
+                        <input id="senha" type="password" name="senha" placeholder="Senha">
+                        <button onclick="verification()" class="btn-login"> Login </button>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="./scripts/script.js"></script>
     </main>
     <footer></footer>
 </body>
