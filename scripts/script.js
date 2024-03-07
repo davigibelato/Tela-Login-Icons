@@ -12,16 +12,17 @@ function verification(){
             text: "Preencha Todos os Campos",
           });
     }else if(user === "admin" || senha === "admin"){
-        Swal.fire("Obrigado Por Fazer Login (:");
-    }else{
+       alert("Obrigado por fazer login!")
+        window.location.href = "./../pages/store-book.html"
         
+    }else{  
+
         Swal.fire({
             icon: "error",
             title: "Opa",
             text: "Senha ou Usuario Incorretos!",
           });
+
     }
-
-
 }
 
