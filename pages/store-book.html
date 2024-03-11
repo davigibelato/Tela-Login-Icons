@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../styles/store-book.css">
     <script src="https://kit.fontawesome.com/35f5de594d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Livraria</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="box-header">
-                    <img id="book-logo-image" src="./../assets/imagem-logo.png" alt="">
-                    <input type="text" id="nav-bar" placeholder="Pesquisar...">
-                    <button id="btn-icon"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <img id="book-logo-image" src="./../assets/imagem-logo.png" alt="">
+                <input type="text" id="nav-bar" placeholder="Pesquisar...">
+                <button id="btn-icon"> <i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="categorias">
                 <a href="#">Home</a>
@@ -24,7 +25,126 @@
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="center-carrossel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="img" src="./../assets/HI-LIVROS-07_08-MOBILE-02-0c47243c6199.webp" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="img" src="./../assets/destaque-app-01-96ab9d216680.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="img" src="./../assets/350_lmbunsgjeks6pgam4rvj.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="center-cards">
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <h2>Mais Vendidos</h2>
+                                <hr>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./../assets/a-chamada.jpg" id="images">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Fantasia</h4>
+                                                        <p class="card-text">Uma aventura sedutora e extraordinária, uma obra indispensável para jovens</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./../assets/a-rainha-vermelha.jpg" id="images">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Romance</h4>
+                                                        <p class="card-text">Típico filme romântico com reviravoltas extraordinárias</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./../assets/as-quatro-rainhas.jpg" id="images">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Romance</h4>
+                                                        <p class="card-text">
+                                                            Roubos, mentiras, traições, um luxuoso cenário de realeza e uma região dominada pela sujeira e contrabando</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./../assets/senhor.jpg" id="images">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Ação</h4>
+                                                        <p class="card-text">O Senhor dos Anéis é um livro de alta fantasia.Escrita entre 1937 e 1949, com muitas partes criadas durante a Segunda Guerra Mundial, a saga é uma continuação de O Hobbit.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="categorias-footer">
+            <h2>Categorias</h2>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="Romance" href="">Romance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Ação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="  ">Fantasia</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <footer>
+        Copyright Livraria Gibelato - 2024. Todos os direitos reservados  
+    </footer>
 </body>
 </html>
